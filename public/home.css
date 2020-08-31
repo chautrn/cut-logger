@@ -1,0 +1,42 @@
+#wrapper {
+	width: 95%;
+	padding: 1% 1% 1% 1%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#row {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	padding: 2%;
+}
+
+#search-bar {
+	width: 100%;
+	padding: 1% 1% 1% .4em;
+	font-size: 8vh;
+	border-radius: 25px;
+}
+
+#search-bar:focus { 
+	outline: none;
+}
+
+.ui-menu {
+	border-radius: 25px;
+}
+
+.ui-menu {
+	margin-top: 2%;
+}
+
+.ui-menu .ui-menu-item {
+	font-size: 8vh;
+	color: gray;
+}
+
+.ui-menu .ui-menu-item .ui-state-active , .ui-menu, .ui-menu-item div:hover{
+	border-radius: 25px;
+}
