@@ -1,4 +1,4 @@
-#wrapper {
+.wrapper {
 	width: 95%;
 	padding: 1% 1% 1% 1%;
 	position: absolute;
@@ -6,18 +6,31 @@
 	transform: translateX(-50%);
 }
 
-#row {
-	box-sizing: border-box;
+.row {
 	width: 100%;
-	overflow: hidden;
-	padding: 2%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.search-container {
+	width: 75%;
+	display: flex;
+	align-items: stretch;
 }
 
 #search-bar {
-	width: 100%;
-	padding: 1% 1% 1% .4em;
+	width: 90%;
+	float: left;
+	padding: 1% 1% 1% 13vh;
 	font-size: 8vh;
-	border-radius: 25px;
+	box-shadow: 5px 4px 30px 4px rgba(0,0,0,0.42);
+	border: 0px;
+	border-radius: 10px;
+	background: url(search.jpg);
+	background-size: 8vh 8vh;
+	background-position: 3vh 50%;
+	background-repeat: no-repeat;
 }
 
 #search-bar:focus { 
@@ -26,10 +39,8 @@
 
 .ui-menu {
 	border-radius: 25px;
-}
-
-.ui-menu {
 	margin-top: 2%;
+	width: 500px; /* random px value. the ui width would freaking break without a random px value :/ */
 }
 
 .ui-menu .ui-menu-item {
@@ -38,5 +49,6 @@
 }
 
 .ui-menu .ui-menu-item .ui-state-active , .ui-menu, .ui-menu-item div:hover{
-	border-radius: 25px;
+	border: 0px;
+	border-radius: 10px;
 }
